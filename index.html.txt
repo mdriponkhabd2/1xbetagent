@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>1XBet Official Agent</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#07121f;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* HEADER */
+
+    header{
+      width:100%;
+      padding:20px 0;
+      position:fixed;
+      top:0;
+      z-index:999;
+      background:rgba(0,0,0,0.45);
+      backdrop-filter:blur(10px);
+    }
+
+    .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:32px;
+      font-weight:700;
+      color:#00bfff;
+      letter-spacing:1px;
+    }
+
+    .contact-btn{
+      background:linear-gradient(135deg,#00bfff,#005eff);
+      color:#fff;
+      padding:12px 24px;
+      border-radius:50px;
+      font-weight:600;
+      transition:0.3s;
+      box-shadow:0 10px 25px rgba(0,191,255,.3);
+    }
+
+    .contact-btn:hover{
+      transform:translateY(-3px);
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background:
+      linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+      url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+      padding:120px 20px 80px;
+    }
+
+    .hero-content h1{
+      font-size:65px;
+      margin-bottom:20px;
+      line-height:1.1;
+    }
+
+    .hero-content h1 span{
+      color:#00bfff;
+    }
+
+    .hero-content p{
+      max-width:700px;
+      margin:auto;
+      font-size:18px;
+      color:#ddd;
+      margin-bottom:35px;
+    }
+
+    .register-btn{
+      display:inline-block;
+      padding:16px 40px;
+      border-radius:50px;
+      background:linear-gradient(135deg,#00bfff,#005eff);
+      color:#fff;
+      font-size:18px;
+      font-weight:600;
+      transition:.3s;
+      box-shadow:0 12px 30px rgba(0,191,255,.35);
+    }
+
+    .register-btn:hover{
+      transform:scale(1.05);
+    }
+
+    /* CONTACT BAR */
+
+    .contact-bar{
+      padding:80px 0;
+      background:#0b1b2d;
+    }
+
+    .contact-wrapper{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .contact-card{
+      background:#11263c;
+      padding:35px;
+      border-radius:20px;
+      text-align:center;
+      transition:.3s;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .contact-card:hover{
+      transform:translateY(-8px);
+      background:#173554;
+    }
+
+    .contact-card i{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    .whatsapp i{
+      color:#25D366;
+    }
+
+    .telegram i{
+      color:#2AABEE;
+    }
+
+    .contact-card h3{
+      margin-bottom:10px;
+      font-size:24px;
+    }
+
+    .contact-card p{
+      color:#bbb;
+      margin-bottom:20px;
+    }
+
+    .contact-link{
+      display:inline-block;
+      padding:12px 25px;
+      border-radius:50px;
+      background:#00bfff;
+      color:#fff;
+      font-weight:600;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#050d16;
+      padding:60px 20px 30px;
+    }
+
+    .footer-content{
+      text-align:center;
+    }
+
+    .footer-content h2{
+      color:#00bfff;
+      margin-bottom:15px;
+      font-size:32px;
+    }
+
+    .footer-content p{
+      color:#aaa;
+      margin-bottom:25px;
+    }
+
+    .social-links{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      margin-bottom:25px;
+      flex-wrap:wrap;
+    }
+
+    .social-links a{
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      background:#11263c;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-size:20px;
+      transition:.3s;
+    }
+
+    .social-links a:hover{
+      background:#00bfff;
+      transform:translateY(-5px);
+    }
+
+    .copyright{
+      border-top:1px solid rgba(255,255,255,0.08);
+      padding-top:20px;
+      color:#777;
+      font-size:14px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .hero-content h1{
+        font-size:42px;
+      }
+
+      .hero-content p{
+        font-size:16px;
+      }
+
+      .logo{
+        font-size:24px;
+      }
+
+      .contact-btn{
+        padding:10px 18px;
+        font-size:14px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container navbar">
+      <div class="logo">1XBET AGENT</div>
+
+      <a href="#contact" class="contact-btn">
+        Contact Us
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>
+        REGISTER <span>NOW</span>
+      </h1>
+
+      <p>
+        Join the official 1XBet agent service today. 
+        Fast registration, secure support, instant response and trusted service.
+      </p>
+
+      <a href="#" class="register-btn">
+        Registration Now
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section class="contact-bar" id="contact">
+    <div class="container">
+
+      <div class="contact-wrapper">
+
+        <!-- WHATSAPP -->
+
+        <div class="contact-card whatsapp">
+          <i class="fab fa-whatsapp"></i>
+
+          <h3>WhatsApp</h3>
+
+          <p>
+            Contact our official support directly on WhatsApp.
+          </p>
+
+          <a href="https://wa.me/8801000000000" class="contact-link">
+            Chat Now
+          </a>
+        </div>
+
+        <!-- TELEGRAM -->
+
+        <div class="contact-card telegram">
+          <i class="fab fa-telegram"></i>
+
+          <h3>Telegram</h3>
+
+          <p>
+            Join Telegram for quick registration and support.
+          </p>
+
+          <a href="https://t.me/yourusername" class="contact-link">
+            Join Now
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <h2>1XBet Official Agent</h2>
+
+      <p>
+        Dhaka, Bangladesh <br>
+        Available 24/7 for customer support & registration service.
+      </p>
+
+      <div class="social-links">
+
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+      </div>
+
+      <div class="copyright">
+        © 2026 1XBet Official Agent Service. All Rights Reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
